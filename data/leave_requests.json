@@ -1,0 +1,12 @@
+[
+  {
+    "employee_name": "Avery Chen",
+    "requested_days": 5,
+    "available_days": 20
+  },
+  {
+    "employee_name": "Jordan Patel",
+    "requested_days": 3,
+    "available_days": 3
+  }
+]
