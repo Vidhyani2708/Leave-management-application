@@ -14,10 +14,11 @@ Run the sample leave-balance validation:
 python -m scripts.validate_leave_balance
 ```
 
-Run the automated unit tests:
+Run the automated pytest suite (including the existing unit tests):
 
 ```sh
-python -m unittest discover -s tests -v
+python -m pip install pytest
+python -m pytest -v
 ```
 
 ## Run in Docker
@@ -32,5 +33,5 @@ docker run --rm employee-leave-management
 ## Continuous integration
 
 The GitHub Actions workflow at `.github/workflows/validate-leave-balance.yml`
-runs the unit tests and leave-balance validation module whenever changes are
-pushed to `main`.
+runs pytest and the leave-balance validation module whenever changes are pushed
+to `main`.
